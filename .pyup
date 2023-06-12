@@ -1,5 +1,3 @@
-[pyup]
-
 Update: all
 Search: True
 Pin: True
@@ -8,3 +6,5 @@ Branch pre-fix: pyup-
 Close PRs: True
 Label PRs: False
 Update hashes: True
+schedule: every week
+update: false
