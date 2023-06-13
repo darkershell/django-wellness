@@ -5,7 +5,11 @@ name = "pypi"
 
 [packages]
 django = "*"
+<<<<<<< HEAD
 heroku = "*"
+=======
+decouple = "*"
+>>>>>>> 1f246c7 (add user model + decouple)
 
 [dev-packages]
 flake8 = "*"
