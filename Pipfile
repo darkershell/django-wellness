@@ -4,15 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+asgiref = "==3.7.2"
 django = "*"
-<<<<<<< HEAD
+flake8 = "==6.0.0"
+mccabe = "==0.7.0"
+pycodestyle = "==2.10.0"
+pyflakes = "==3.0.1"
+sqlparse = "==0.4.4"
+typing-extensions = "==4.6.3"
 heroku = "*"
-=======
-decouple = "*"
->>>>>>> 1f246c7 (add user model + decouple)
+python-decouple = "*"
 
 [dev-packages]
-flake8 = "*"
 
 [requires]
 python_version = "3.9"

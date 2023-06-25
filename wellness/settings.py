@@ -34,13 +34,13 @@ AUTH_USER_MODEL = 'core.User'
 # Application definition
 
 INSTALLED_APPS = [
+    'wellness.core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wellness.core',
 ]
 
 MIDDLEWARE = [
