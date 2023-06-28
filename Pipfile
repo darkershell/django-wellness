@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+boto3 = "*"
 asgiref = "==3.7.2"
 django = "*"
 flake8 = "==6.0.0"
@@ -17,6 +18,7 @@ python-decouple = "*"
 gunicorn = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
+django-s3-folder-storage = "*"
 
 [dev-packages]
 
