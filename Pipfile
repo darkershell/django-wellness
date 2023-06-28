@@ -16,6 +16,7 @@ heroku = "*"
 python-decouple = "*"
 gunicorn = "*"
 dj-database-url = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
