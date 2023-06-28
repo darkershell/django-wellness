@@ -1,3 +1,4 @@
 DEBUG = False
 SECRET_KEY = set your secret key here
 ALLOWED_HOSTS= localhosts
+DATABASE_URL=postgres://postgres:postgres@localhost/postgres
