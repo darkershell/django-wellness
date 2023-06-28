@@ -15,6 +15,7 @@ typing-extensions = "==4.6.3"
 heroku = "*"
 python-decouple = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
