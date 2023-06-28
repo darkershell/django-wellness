@@ -14,16 +14,7 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [ 3.8, 3.9]
-
-    services:
-      postgres:
-        image: postgres:15.2
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
-        ports: [ '5432:5432' ]
-
+        
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
@@ -40,7 +31,8 @@ jobs:
         pip install -r requirements.txt
     - name: Postgres Test
       run: |
-        psql -c "CREATE DATABASE postgres;" -U postgres
+        apt-get install --yes --no-install-recommends postgresql-client
+        psql -h postgres -U postgres -c 'CREATE DATABASE postgres;'
     - name: Run Tests
       run: |
         python manage.py test
