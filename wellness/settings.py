@@ -78,6 +78,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'wellness.wsgi.application'
 
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+
+#Django debug toolbar
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
+
+
+
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 default_db_url = 'sqlite:///' + str(BASE_DIR / 'db.sqlite3')
@@ -136,7 +145,7 @@ COLLECTFAST_ENABLED = False
 # ------------------------------------------------------------------------------
 # Uploaded Media Files
 # ------------------------------------------------------------------------------
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', default=False)
 
 
 if AWS_ACCESS_KEY_ID:  # pragma: no cover
