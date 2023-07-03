@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9725cd54c6e6ee4e665f0f3ae08ac490a5ad1933a2bcec47695d5502ee75317a"
+            "sha256": "f4ed1121f1b4f048d746b6cb25bdd2aa11c026134cb2e24110eb5a041dffe2dc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -147,11 +147,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:2a6b6fbff5b59dd07bef10bcb019bee2ea97a30b2a656d51346596724324badf",
-                "sha256:672b3fa81e1f853bb58be1b51754108ab4ffa12a77c06db86aa8df9ed0c46fe5"
+                "sha256:45a747e1c5b3d6df1b141b1481e193b033fd1fdbda3ff52677dc81afdaacbaed",
+                "sha256:f7c7852a5ac5a3da5a8d5b35cc6168f31b605971441798dac845f17ca8028039"
             ],
             "index": "pypi",
-            "version": "==4.2.2"
+            "version": "==4.2.3"
         },
         "django-debug-toolbar": {
             "hashes": [
@@ -378,6 +378,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==0.6.1"
+        },
+        "sentry-sdk": {
+            "hashes": [
+                "sha256:0c9f858337ec3781cf4851972ef42bba8c9828aea116b0dbed8f38c5f9a1896c",
+                "sha256:760e4fb6d01c994110507133e08ecd4bdf4d75ee4be77f296a3579796cf73134"
+            ],
+            "index": "pypi",
+            "version": "==1.26.0"
         },
         "setuptools": {
             "hashes": [
