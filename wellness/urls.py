@@ -25,9 +25,6 @@ urlpatterns = [
     path('', home),
 ]
 
-
-
-
 if settings.DEBUG:
     import debug_toolbar
 
