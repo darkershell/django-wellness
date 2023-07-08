@@ -16,6 +16,7 @@
     
 
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -128,6 +129,29 @@
 
     <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
 
+<footer class="main-footer mt-5 pt-4 text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Contact us</h3>
+        <address>
+          +353 00000000
+          <br/>
+          <a href="mailto:qwert@richardnixon.dev" class="text-light">qwert@richardnixon.dev</a>
+        </address>
+      </div>
+    </div>
+  </div>
+<div class="rights pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {% now 'Y' %} Django Wellness. All righs reserved.
+      </div>
+    </div>
+  </div>
+</div>  
+</footer>
       
   </body>
 </html>
